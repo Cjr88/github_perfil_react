@@ -8,10 +8,15 @@ import ReposList from "./components/ReposList";
 function App() {
   // const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true)
   const [nomeUsuario, setNomeUsuario] = useState('')
+ 
 
   return (
     <>
-    <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)}/>
+    <div style={{marginTop:'2px',margin:'8px'}}>
+      <span style={{ fontSize:'22px', marginRight:'3px'}}>Digite seu GitHub:</span>
+      <input style={{fontSize: '16px', padding:'4px'}} type="text" onBlur={(e) => setNomeUsuario(e.target.value)}/>
+    </div>
+ 
 
     {nomeUsuario.length > 4 && (
       <>

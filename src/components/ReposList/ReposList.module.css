@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
+    margin: 10px;
 }
 .listItem{
     list-style: none;
@@ -20,7 +21,22 @@
     margin-top: 8px;
     text-decoration: none;
 }
-.input{
-    padding: 14px;
-    margin: 7px;
+
+@media (max-width:767px){
+    .list{
+        display: block;
+        padding: 10px;
+    }
+    .listItem{
+        margin: 10px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 10px;
+    }
+
 }
